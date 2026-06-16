@@ -6,106 +6,121 @@
     <title>CV - Kenneth Alejandro Varón Cortés</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 850px;
+            color: #f8fafc;
+            background-color: #0f172a;
+            max-width: 800px;
             margin: 0 auto;
             padding: 30px 20px;
-            background-color: #fdfdfd;
         }
+
         header {
-            border-bottom: 3px solid #007acc;
-            padding-bottom: 15px;
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
             margin-bottom: 25px;
         }
+
         h1 {
-            color: #1e1e1e;
             margin: 0 0 5px 0;
-            font-size: 32px;
-            font-weight: 700;
+            font-size: 28px;
+            color: #f8fafc;
         }
+
         h2 {
-            color: #007acc;
-            font-size: 20px;
-            margin: 0 0 15px 0;
-            font-weight: 600;
-        }
-        h3 {
-            color: #1e1e1e;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 6px;
-            margin-top: 30px;
+            color: #38bdf8;
             font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+
+        h3 {
+            color: #38bdf8;
+            font-size: 16px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 5px;
         }
-        .contact-info {
+
+        p, li {
             font-size: 14px;
-            color: #555;
+            color: #94a3b8;
         }
+
+        strong {
+            color: #f8fafc;
+        }
+
         .contact-info a {
-            color: #007acc;
+            color: #38bdf8;
             text-decoration: none;
-            font-weight: bold;
         }
-        .contact-info a:hover {
-            text-decoration: underline;
+
+        .section-item {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            margin-bottom: 15px;
         }
-        .job, .education {
-            margin-bottom: 25px;
+
+        .item-header {
+            margin-bottom: 10px;
         }
-        .job-title {
+
+        .item-title {
             font-size: 16px;
             font-weight: bold;
-            color: #222;
+            color: #f8fafc;
+            display: inline-block;
         }
-        .company {
+
+        .item-date {
+            color: #38bdf8;
+            font-weight: bold;
+            font-size: 13px;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .company-name {
+            color: #e2e8f0;
             font-style: italic;
-            color: #555;
-            font-weight: 500;
-        }
-        .date {
-            float: right;
-            color: #777;
             font-size: 14px;
-            font-weight: 500;
+            margin-bottom: 8px;
         }
+
         ul {
-            margin-top: 8px;
+            margin: 5px 0 10px 0;
             padding-left: 20px;
         }
+
         li {
             margin-bottom: 6px;
         }
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .skill-item {
-            background-color: #f4f6f8;
-            padding: 8px 12px;
-            border-radius: 4px;
-            border-left: 3px solid #007acc;
-            font-size: 14px;
-            color: #333;
-        }
-        .project-link {
-            font-size: 14px;
-            margin-top: 5px;
+
+        .btn-link {
             display: inline-block;
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            text-decoration: none;
+            border: 1px solid #334155;
+            margin-top: 5px;
         }
-        .clear {
-            clear: both;
+
+        .btn-link:hover {
+            background-color: #334155;
         }
-        @media (max-width: 600px) {
-            .date {
-                float: none;
-                display: block;
-                margin-top: 5px;
-            }
+
+        .tech-list {
+            color: #f8fafc;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -115,9 +130,11 @@
         <h1>Kenneth Alejandro Varón Cortés</h1>
         <h2>Desarrollador Front End Junior</h2>
         <div class="contact-info">
-            Bogotá, Colombia | Tel: +57 322 350 8510 | Email: <a href="mailto:varonalejandrok@gmail.com">varonalejandrok@gmail.com</a>
-            <br>
-            GitHub: <a href="https://github.com/VaronKenneth" target="_blank">github.com/VaronKenneth</a> | LinkedIn: <a href="#">[Tu Enlace Aquí]</a>
+            <p style="margin: 0; color: #94a3b8;">
+                Bogotá, Colombia | Teléfono: +57 322 350 8510 | Email: <a href="mailto:varonalejandrok@gmail.com">varonalejandrok@gmail.com</a>
+                <br>
+                GitHub: <a href="https://github.com/VaronKenneth" target="_blank">github.com/VaronKenneth</a>
+            </p>
         </div>
     </header>
 
@@ -130,27 +147,24 @@
 
     <section>
         <h3>Stack Tecnológico</h3>
-        <div class="skills-container">
-            <div class="skill-item">React / Next.js</div>
-            <div class="skill-item">JavaScript (ES6+)</div>
-            <div class="skill-item">TypeScript</div>
-            <div class="skill-item">Tailwind CSS / HTML5 / CSS3</div>
-            <div class="skill-item">Figma (UI/UX Intermedio)</div>
-            <div class="skill-item">Git / GitHub</div>
-            <div class="skill-item">Prisma ORM</div>
-            <div class="skill-item">PostgreSQL</div>
-            <div class="skill-item">Stripe API (Pagos)</div>
-            <div class="skill-item">AI-Augmented Development</div>
+        <div class="section-item">
+            <p style="margin: 0; line-height: 1.8;">
+                <span class="tech-list">Tecnologías Principales:</span> React, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3.<br>
+                <span class="tech-list">Herramientas y Diseño:</span> Figma (Diseño UI/UX nivel intermedio), Git, GitHub, AI-Augmented Development.<br>
+                <span class="tech-list">Back End y Datos:</span> Prisma ORM, PostgreSQL, Stripe API (Integración de Pasarelas de Pago).
+            </p>
         </div>
     </section>
 
     <section>
         <h3>Experiencia Laboral</h3>
 
-        <div class="job">
-            <span class="date">2024 - Presente (2 años)</span>
-            <span class="job-title">Desarrollador Full Stack / Front End (Freelance - Contractor)</span><br>
-            <span class="company">Plataforma Upwork e Independiente</span>
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Desarrollador Full Stack / Front End</span>
+                <span class="item-date">Periodo: 2 años</span>
+                <div class="company-name">Plataforma Upwork e Independiente (Freelance / Contractor)</div>
+            </div>
             <ul>
                 <li>Colaboré activamente en células de desarrollo de software para equipos internacionales como RingWise, Restaurant Supply e IA Nubes / CreamFlow.</li>
                 <li>Diseñé e implementé la arquitectura Front End completa para la integración fluida de asistentes virtuales y funcionalidades basadas en Inteligencia Artificial Generativa.</li>
@@ -158,60 +172,58 @@
                 <li>Implementé con éxito flujos de pago recurrentes, checkout y planes de suscripción mediante la API de <strong>Stripe</strong>.</li>
             </ul>
         </div>
-        <div class="clear"></div>
 
-        <div class="job">
-            <span class="date">6 Meses</span>
-            <span class="job-title">Desarrollador Front End (Contractor)</span><br>
-            <span class="company">Proyecto: ESP Filters (E-commerce Automotriz)</span>
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Desarrollador Front End</span>
+                <span class="item-date">Periodo: 6 meses</span>
+                <div class="company-name">Proyecto Comercial: ESP Filters (E-commerce Automotriz)</div>
+            </div>
             <ul>
                 <li>Desarrollé y optimicé el entorno visual completo de la plataforma de e-commerce utilizando <strong>Next.js, Tailwind CSS y TypeScript</strong>.</li>
                 <li>Aseguré la modularidad y reutilización de componentes, logrando una navegación fluida, responsive y libre de errores en producción.</li>
-                <li>Traducción fiel de requerimientos de negocio a interfaces interactivas de alta fidelidad.</li>
             </ul>
-            <span class="project-link">🔗 Sitio en producción: <a href="https://esp.com.co/" target="_blank">https://esp.com.co/</a></span>
+            <a href="https://esp.com.co/" target="_blank" class="btn-link">🔗 Visitar Sitio Web</a>
         </div>
-        <div class="clear"></div>
     </section>
 
     <section>
         <h3>Proyectos Destacados</h3>
 
-        <div class="job">
-            <span class="date">2 Meses</span>
-            <span class="job-title">Landing Page Corporativa - Berly Aid</span><br>
-            <span class="company">Desarrollador Front End Autónomo</span>
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Portafolio Creativo de Arte (Diseño Personal)</span>
+                <span class="item-date">Proyecto Independiente</span>
+            </div>
+            <ul>
+                <li>Diseñé y estructuré un portafolio web personalizado e interactivo para la exposición de piezas artísticas digitales y tradicionales.</li>
+                <li>Implementé un entorno responsive estilizado y enfocado en la experiencia de usuario visual, optimizando el rendimiento de carga para galerías multimedia de alta fidelidad.</li>
+            </ul>
+            <a href="https://varonkenneth.github.io/repo-kate/index.html" target="_blank" class="btn-link">🔗 Ver Proyecto</a>
+        </div>
+
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Landing Page Corporativa - Berly Aid</span>
+                <span class="item-date">Periodo: 2 meses</span>
+            </div>
             <ul>
                 <li>Diseñé la interfaz en Figma y la programé de extremo a extremo garantizando un diseño 100% responsivo con <strong>Next.js y Tailwind CSS</strong>.</li>
                 <li>Implementé un sistema nativo de envío de correos electrónicos para la automatización de solicitudes y agendamiento de citas de los clientes.</li>
             </ul>
-            <span class="project-link">🔗 Repositorio del código: <a href="https://github.com/VaronKenneth/Landing" target="_blank">github.com/VaronKenneth/Landing</a></span>
-        </div>
-        <div class="clear"></div>
-    </section>
-
-    <section>
-        <h3>Educación</h3>
-        
-        <div class="education">
-            <span class="date">En curso</span>
-            <span class="job-title">Ingeniería de Sistemas</span><br>
-            <span class="company">Educación Universitaria (Bogotá, Colombia)</span>
-        </div>
-
-        <div class="education">
-            <span class="date">Graduado (2023)</span>
-            <span class="job-title">Bachiller Técnico con Especialidad Comercial</span><br>
-            <span class="company">I.E.T Camila Molano (Venadillo, Tolima)</span>
+            <a href="https://github.com/VaronKenneth/Landing" target="_blank" class="btn-link">🔗 Ver Código en GitHub</a>
         </div>
     </section>
 
     <section>
-        <h3>Idiomas & Habilidades Blandas</h3>
-        <ul>
-            <li><strong>Español:</strong> Nativo | <strong>Inglés:</strong> Nivel B2 (Intermedio-Avanzado).</li>
-            <li>Resolución de problemas complejos, aprendizaje rápido de nuevas tecnologías, comunicación efectiva en equipos remotos y adaptabilidad.</li>
-        </ul>
+        <h3>Educación e Idiomas</h3>
+        <div class="section-item">
+            <p style="margin: 0 0 10px 0;"><strong style="color: #38bdf8;">Ingeniería de Sistemas</strong> - En curso (Bogotá, Colombia)</p>
+            <p style="margin: 0 0 15px 0;">Bachiller Técnico Comercial - I.E.T Camila Molano (Graduado 2023)</p>
+            <p style="margin: 0; padding-top: 10px; border-top: 1px solid #334155;">
+                <strong>Idiomas:</strong> Español (Nativo) | <strong>Inglés (Nivel B2):</strong> Capacidad para comunicarse de forma escrita y oral en entornos profesionales bilingües.
+            </p>
+        </div>
     </section>
 
 </body>
