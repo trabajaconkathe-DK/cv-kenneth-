@@ -122,6 +122,35 @@
             color: #f8fafc;
             font-weight: bold;
         }
+
+        /* REGLAS ESTRICTAS PARA EXPORTACIÓN A PDF / IMPRESIÓN */
+        @media print {
+            body {
+                background-color: #0f172a !important;
+                color: #f8fafc !important;
+                -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+                print-color-adjust: exact !important;         /* Estándar Firefox */
+            }
+            header, .section-item {
+                background-color: #1e293b !important;
+                border: 1px solid #334155 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            h1, strong, .item-title, .tech-list {
+                color: #f8fafc !important;
+            }
+            h2, h3, .item-date, .contact-info a, .btn-link {
+                color: #38bdf8 !important;
+            }
+            p, li {
+                color: #94a3b8 !important;
+            }
+            .btn-link {
+                background-color: #0f172a !important;
+                border: 1px solid #334155 !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -131,7 +160,7 @@
         <h2>Desarrollador Front End Junior</h2>
         <div class="contact-info">
             <p style="margin: 0; color: #94a3b8;">
-                Bogotá, Colombia | Teléfono: +57 322 350 8510 | Email: <a href="mailto:varonalejandrok@gmail.com">varonalejandrok@gmail.com</a>
+                Bogotá, Colombia | Teléfono: +57 322 350 8510 | Email: <a href="mailto:kafazevc@gmail.com">kafazevc@gmail.com</a>
                 <br>
                 GitHub: <a href="https://github.com/VaronKenneth" target="_blank">github.com/VaronKenneth</a>
             </p>
